@@ -1,6 +1,6 @@
-# Review Analyzer
+# DiceAI - PyModule
 
-A Python package that uses Google's Gemini AI to analyze cafeteria and mess reviews for authenticity.
+A Python package that uses Google's Gemini AI to analyze cafeteria and mess reviews for authenticity and many more...
 
 ## Installation
 
@@ -11,7 +11,7 @@ pip install -e .
 ## Usage
 
 ```python
-from review_analyzer import ReviewAnalyzer
+from DiceAI import ReviewAnalyzer
 
 analyzer = ReviewAnalyzer(api_key="YOUR_GEMINI_API_KEY")
 result = analyzer.analyze_review("The food was amazing and service was great!")

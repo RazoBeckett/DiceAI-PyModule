@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from review_analyzer import ReviewAnalyzer
+from DiceAI import ReviewAnalyzer
 
 
 # Fixture to create an analyzer instance with a default model

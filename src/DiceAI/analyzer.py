@@ -1,5 +1,5 @@
 """
-Review Analyzer Module
+DiceAI Module
 
 This module provides the `ReviewAnalyzer` class, which uses Google's Gemini AI
 to analyze cafeteria and mess reviews for authenticity. It evaluates reviews based
@@ -12,7 +12,7 @@ Features:
 - Returns a structured JSON response with a verdict, confidence score, and key reasons.
 
 Usage:
-    from review_analyzer import ReviewAnalyzer
+    from DiceAI import ReviewAnalyzer
 
     analyzer = ReviewAnalyzer(api_key="YOUR_API_KEY")
     review_text = "The food was cold and service was slow."

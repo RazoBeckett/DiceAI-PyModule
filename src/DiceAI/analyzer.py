@@ -71,6 +71,15 @@ class ReviewAnalyzer:
         self.client = genai.Client(api_key=api_key)
         self.model = model
 
+    def change_model(self, model: str):
+        """
+        Change the Gemini Model used for analysis
+
+        Args:
+            model (str): The new model name to set.
+        """
+        self.model = model
+
     def analyze_review(self, review_text: str) -> str:
         """Analyzes a cafeteria/mess review to determine if it's authentic or fake.
 

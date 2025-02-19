@@ -58,13 +58,16 @@ Do not return anything else other than the JSON formatted output.
 class ReviewAnalyzer:
     """A class to analyze reviews using the Gemini AI model."""
 
-    def __init__(self, api_key, model="gemini-2.0-flash"):
+    def __init__(self, api_key: str, model: str ="gemini-2.0-flash"):
         """Initialize the ReviewAnalyzer with a Gemini API key.
 
         Args:
             api_key (str): The Gemini API key
             model (str, optional): The Gemini model to use. Defaults to "gemini-2.0-flash".
         """
+        if not api_key.strip():
+            raise ValueError("API key cannot be empty.")
+
         self.client = genai.Client(api_key=api_key)
         self.model = model
 
